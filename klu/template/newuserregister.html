@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+
+
+{% block body %}
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: white;
+}
+button {
+       background-color: #4ca2af;
+       width: 50%;
+        color: orange;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+
+ input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+    }
+
+    .container{
+      padding: 60px;
+       width: 45%;
+      background-color: lightblue
+    }
+.topright {
+  position: absolute;
+  top: 200px;
+  right: -270px;
+  font-size: 18px;
+}
+
+</style>
+<img src="https://images.pexels.com/photos/1036808/pexels-photo-1036808.jpeg?auto=compress&cs=tinysrgb&w=1910">
+<div class="topright">
+<div class="container">
+  <form action="newuserregister" method="post" id="regtable" name="registrationform" onsubmit="return validateall()">
+      <label>First name : </label>
+      <input type="text" placeholder="Enter First name" name="Firstname" required>
+      <label>Email id : </label>
+      <input type="text" placeholder="Enter Email id:" name="Email id" required>
+      <label>Username : </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+      <label> re-enter Password : </label>
+            <input type="password" placeholder="re-enter Password" name="re-enter password" required>
+             <a href="sucess"> <strong><bold>Register </bold></strong> </a>
+
+    </form>
+</div>
+</div>
+
+
+{% endblock %}

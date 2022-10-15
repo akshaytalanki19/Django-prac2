@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Login In{% endblock %}
+
+{% block body %}
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: white;
+}
+button {
+       background-color: #4ca2af;
+       width: 50%;
+        color: orange;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+
+ input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+    }
+
+
+ .container {
+        padding: 55px;
+        width: 45%;
+
+        background-color: lightblue
+
+    }
+    .topright {
+  position: absolute;
+  top: 550px;
+  right: 401px;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+<img src="https://images.pexels.com/photos/3183195/pexels-photo-3183195.jpeg?auto=compress&cs=tinysrgb&w=1900&l=5">
+    <form>
+        <div class="topright">
+        <div class="container">
+            <label>Username : </label>
+            <input type="text" placeholder="Enter Username" name="username" >
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" >
+
+           <centre> <input type="checkbox" checked="checked"> Remember me </centre>
+            <a href="index">   <center> <button type="submit">Login</button> </center></a>
+
+                  <a href="newuserregister"> <strong><bold>Sign up </bold></strong> </a>
+        </div>
+            </div>
+    </form>
+
+</body>
+
+{% endblock %}
